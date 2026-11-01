@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "MailServer",
+      "request": "launch",
+      "mainClass": "MailServer",
+      "vmArgs": "-Dfile.encoding=UTF-8",
+      "env": {
+        "DB_URL": "jdbc:postgresql://localhost:5432/mailapp",
+        "DB_USER": "postgres",
+        "DB_PASS": "danh@it2006"
+      }
+    },
+    {
+      "type": "java",
+      "name": "MailClient",
+      "request": "launch",
+      "mainClass": "MailClient",
+      "vmArgs": "-Dfile.encoding=UTF-8",
+      "env": {
+        "DB_URL": "jdbc:postgresql://localhost:5432/mailapp",
+        "DB_USER": "postgres",
+        "DB_PASS": "danh@it2006"
+      }
+    }
+  ]
+}
